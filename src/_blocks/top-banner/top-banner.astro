@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+
+import img from './img/children.png';
+---
+
+<section id="topBanner">
+  <div class="top-banner__img_container">
+    <Image
+      class="top-banner__img"
+      densities={[1.5, 2]}
+      src={img}
+      alt="hugging kids"
+    />
+  </div>
+  <div class="top-banner__content">
+    <h1 class="top-banner__title">Welcome to Little Learners Academy</h1>
+    <h2 class="section-title">
+      Where Young Minds Blossom and
+      <span class="t-orange">Dreams Take Flight.</span>
+    </h2>
+    <p class="top-banner__text">
+      Our kinder garden school provides a nurturing and stimulating environment,
+      fostering a love for learning that lasts a lifetime. Join us as we embark
+      on an exciting educational journey together!
+    </p>
+
+    <div class="container-shadow top-banner__nums">
+      <div class="top-banner__nums-item">
+        <b>+7000</b><span>Students Passed Out</span>
+      </div>
+      <div class="top-banner__nums-item">
+        <b>+37</b><span>Awards & Recognitions</span>
+      </div>
+      <div class="top-banner__nums-item">
+        <b>+15</b><span>Experience Educators</span>
+      </div>
+    </div>
+  </div>
+</section>

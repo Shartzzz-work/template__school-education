@@ -1,0 +1,11 @@
+{% set mataTitle = "Супер-гуд" %} {% set keywords = "" %} {% set description = "" %} {% extends
+"./_layout/layout.html" %} {% block style %}
+<link rel="stylesheet" href="style.css" />
+{% endblock %} {% block content %} {% include "./_blocks/top-banner/top-banner.html" %} {% include
+"./_blocks/benefit/benefit.html" %}
+{% include "./_blocks/testimonial/testimonial.html" %}
+{% include "./_blocks/faq/faq.html" %}
+{% include "./_blocks/navigate/navigate.html" %}
+{% endblock %} {% block script %}
+<script type="module" src="script.js"></script>
+{% endblock %}
